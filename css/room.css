@@ -1,0 +1,321 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+:root {
+  --main-coloer: #009688;
+  --main-coloer-alt: #1787e0;
+  --main-transition: 0.3s;
+  --main-padding-top: 100px;
+  --main-padding-bottom: 100px;
+}
+/* end variaboles */
+/* start globel rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  background-color: #e3e3e3;
+}
+body {
+  font-family: "work sans", sans-serif;
+  background-color: #f7f7f7;
+}
+/* smal l */
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+    margin: 0 auto;
+  }
+}
+/* medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+    margin: 0 auto;
+  }
+}
+/* large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+    margin: 0 auto;
+  }
+}
+a {
+  text-decoration: none;
+}
+.roomdata .content {
+  display: flex;
+
+  justify-content: space-between;
+  margin: 60px 0;
+}
+
+.roomdata .img {
+  flex: 2;
+  margin: auto;
+}
+.roomdata .img img {
+  width: 90%;
+  transition: 0.3s;
+}
+.roomdata .img:hover img {
+  width: 93%;
+}
+.roomdata .box {
+  flex: 1;
+  padding: 30px;
+}
+.roomdata .box h1 {
+  text-align: center;
+  font-weight: bold;
+  color: var(--main-coloer);
+  margin-bottom: 50px;
+}
+.roomdata .box .text {
+  border: 2px solid black;
+  left: 10px;
+  padding: 20px;
+}
+.roomdata .box .text h2 {
+  padding: 10px;
+  font-weight: bold;
+  color: #333;
+}
+.roomdata .box .text h3 {
+  font-size: 20px;
+  text-align: center;
+  margin: 20px;
+}
+.roomdata .box .text h3 i {
+  color: var(--main-coloer);
+  padding: 10px;
+}
+.roomdata .box .text p {
+  text-align: center;
+  position: relative;
+  font-size: 20px;
+  width: fit-content;
+  margin: 0 auto;
+}
+.roomdata .box .text p::after {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: green;
+  margin: 9px;
+}
+
+.roomdata .box .line {
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  margin: 9px;
+}
+
+.details {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #eee;
+}
+.details .content {
+  padding: 30px;
+}
+.details .content h3 {
+  color: var(--main-coloer-alt);
+  padding-bottom: 20px;
+  font-size: 30px;
+}
+.details .content li {
+  font-size: 18px;
+  padding: 5px;
+}
+footer {
+  background-color: #f7f7f7;
+  margin-top: 40px;
+  padding-bottom: 40px;
+}
+footer .content {
+  display: flex;
+justify-content: space-between;
+}
+footer .contac img{
+  height: 75px;
+  width: auto;
+  margin-bottom: 20px;
+}
+footer .contac h4{
+  margin: 10px 0;
+  color: #777;
+  font-size: 18px;
+  cursor:pointer
+}
+footer .contac h4:hover , 
+footer .contac p:hover ,
+footer .rules li:hover
+{
+  color: black;
+}
+footer .contac p{
+  margin: 10px 0;
+  color: #777;
+  font-size: 18px;
+}
+footer .contac .made i{
+margin: 10px 5px ;
+color: #777;
+font-size: 20px;
+}
+footer .contac .made .fa-whatsapp:hover{
+  color: #00a884;
+}
+footer .contac .made .fa-linkedin:hover{
+  color: #0a66c2;
+}
+footer .contac .made .fa-tiktok:hover{
+  color: rgb(0 0 0);
+}
+footer .contac .made .fa-facebook:hover{
+  color: #1877f2;
+}
+footer .contac .made .fa-instagram:hover{
+  color: #85327e;
+}
+footer .contac .made .fa-pinterest:hover{
+  color: #e60023;
+}
+footer .contac .made .fa-twitter:hover{
+  color: rgb(29 155 240);
+}
+footer .rules h4{
+color: var(--main-coloer);
+font-size: 30px;
+margin-bottom: 10px;
+}
+footer .rules li{
+font-size: 18px;
+color: #777;
+line-height: 1.8;
+}
+
+
+footer .copy h5{
+  padding-top: 30px;
+  color: #333;
+  
+}
+footer .copy h5 span:hover{
+  color: var(--main-coloer);
+}
+
+footer .copy {
+  display: flex;
+  justify-content: space-between;
+}
+footer .copy img {
+width: 50%;
+}
+.button{
+  padding: 30px 0 10px;
+}
+.button button{
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: var(--main-coloer);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+}
+.payment{
+  position: absolute;
+  display: flex;
+   width: 25%;
+  margin: 0 auto;
+  background-color:var(--main-coloer);
+  top: 250px;
+  left: -500%;
+  height: 55vh;
+  transform: translate(-50% , -50%);
+  box-shadow:300px 300px 300px 895px rgb(0 ,0, 0 ,0.85);
+  opacity: 0;
+  transition: all 0.5s;
+  
+}
+.payment.opan{
+left: 50%;
+opacity: 1;
+}
+.payment .card p{
+  border: 1px solid red;
+    width: fit-content;
+    padding: 0 3px;
+    margin: 5px;
+    background-color: red;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    position: absolute;
+    box-shadow: 2px 2px 2px 2px rgb(0 ,0, 0 ,0.65);
+
+}
+.payment .card h2{
+  font-size: 35px;
+  padding: 10px ;
+  text-align: center;
+}
+.payment .card .img{
+  display: flex;
+  padding:20px;
+  margin: 0 auto;
+}
+.payment .card .img img{
+  width: 60px;
+  margin: 0 auto;
+  gap: 5px;
+}
+.payment form {
+  padding: 20px;
+
+}
+.payment .nam1{
+  width: 100%;
+  text-align-last: center;
+  font-size: 20px;
+  margin:10px;
+
+} 
+.payment .nam2,
+.payment .nam3{
+  width: 45%;
+  text-align-last: center;
+  font-size: 20px;
+  margin: 5px;
+ 
+} 
+.payment button{
+  display: block;
+  font-size: 20px;
+  padding: 10px 30px;
+  margin: 20px auto ;
+  font-weight: bold;
+  color: white;
+  background-color:var(--main-coloer-alt);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 2px 2px 2px 2px rgb(0 ,0, 0 ,0.65);
+}
